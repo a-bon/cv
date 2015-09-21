@@ -1,0 +1,33 @@
+﻿body{
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#titre_cv{
+    text-align:center;
+}
+
+#nom{
+    text-align:center;
+}
+
+.titres_blocs{
+    text-decoration:underline;
+}
+
+.titre_liste{
+    color:#1AB6EB;
+    font-weight:600;
+}
+
+.titre_competence{
+    font-weight:600;
+}
+
+.sous_liste{
+    list-style-type:none;
+}
+
+.competences{
+    list-style-type:none;
+}
