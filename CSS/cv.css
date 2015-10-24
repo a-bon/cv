@@ -3,6 +3,10 @@
     margin-right:15%;
 }
 
+#corps{
+    clear:left;
+}
+
 #titre_cv{
     text-align:center;
 }
@@ -33,11 +37,29 @@
 }
 
 #menu_horizontal li {
-display : inline;
-padding : 0 0.5em;
-border: 1px solid black;
+    float:left;
+    border: 1px solid #ffffff;
 }
 
-#menu_horizontal {
-list-style-type : none;
+#menu_horizontal ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+#menu_horizontal a{
+     display:block; 
+     width:100px;
+     line-height:50px;
+     background-color:#600fbb;
+     color:#DCDCDC;
+     text-decoration:none;
+     text-align:center;
+     margin:0;
+     border-radius:5px;
+}
+
+#menu_horizontal a:hover{
+    background-image: linear-gradient(to bottom right, #671abe, #ebe7e7);
+    color:#000000;
 }
