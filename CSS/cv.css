@@ -1,4 +1,9 @@
-﻿body{
+﻿
+body{
+    margin-left:0;
+    padding-left:0;
+}
+section,#menu_horizontal{
     margin-left:15%;
     margin-right:15%;
 }
@@ -38,7 +43,7 @@
 
 #menu_horizontal li {
     float:left;
-    border: 1px solid #ffffff;
+    margin-right:1px;
 }
 
 #menu_horizontal ul{
@@ -50,7 +55,7 @@
 #menu_horizontal a{
      display:block; 
      width:100px;
-     line-height:50px;
+     line-height:300%;
      background-color:#600fbb;
      color:#DCDCDC;
      text-decoration:none;
@@ -63,3 +68,101 @@
     background-image: linear-gradient(to bottom right, #671abe, #ebe7e7);
     color:#000000;
 }
+
+#menu_vertical{
+    float:left;
+    position:fixed;
+    margin-top:9%;
+    margin-left:0;
+    padding-left:0;
+    text-align:left;
+}
+
+#menu_vertical ul{
+    list-style-type:none;
+    margin-left:0;
+    padding-left:2%;
+}
+
+#menu_vertical li{
+    margin-bottom:1px;
+}
+
+#menu_vertical a{
+    display:block; 
+    width:160%;
+    line-height:300%;
+    color:#600fbb;
+    background-color:#DCDCDC;
+    text-decoration:none;
+    text-align:center;
+    margin:0;
+}
+
+@keyframes anim_menu {
+    from {
+        width: 160%;
+        background-color:#DCDCDC;
+        color:#600fbb;
+    }
+    to {
+        width:200%;
+        color:#DCDCDC;
+        background-color:#600fbb;
+    }
+}
+
+@-webkit-keyframes anim_menu{
+    from {
+        width: 160%;
+        background-color:#DCDCDC;
+        color:#600fbb;
+    }
+    to {
+        width:200%;
+        color:#DCDCDC;
+        background-color:#600fbb;
+    }
+}
+
+@-moz-keyframes anim_menu{
+     from {
+        width: 160%;
+        background-color:#DCDCDC;
+        color:#600fbb;
+    }
+    to {
+        width:200%;
+        color:#DCDCDC;
+        background-color:#600fbb;
+    }
+}
+
+@-o-keyframes anim_menu {
+     from {
+        width: 160%;
+        background-color:#DCDCDC;
+        color:#600fbb;
+    }
+    to {
+        width:200%;
+        color:#DCDCDC;
+        background-color:#600fbb;
+    }
+}
+
+#menu_vertical a:hover{
+   animation-name: example;
+   animation-duration: 1s;
+   animation-fill-mode:forwards;
+   -moz-animation-name: anim_menu;
+   -moz-animation-duration:1s;
+   -moz-animation-fill-mode:forwards;
+   -webkit-animation-name:anim_menu;
+   -webkit-animation-duration:1s;
+   -webkit-animation-fill-mode:forwards;
+   -o-animation-name:anim_menu;
+   -o-animation-duration:1s;
+   -o-animation-fill-mode:forwards;
+}
+
