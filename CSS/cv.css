@@ -3,13 +3,19 @@ body{
     margin-left:0;
     padding-left:0;
 }
-section,#menu_horizontal{
+
+.titre{
+    text-align:center;
+}
+
+body section,#menu_horizontal{
     margin-left:15%;
     margin-right:15%;
 }
 
 #corps{
     clear:left;
+    padding-top:1%;
 }
 
 #titre_cv{
@@ -54,7 +60,7 @@ section,#menu_horizontal{
 
 #menu_horizontal a{
      display:block;
-     width:100px;
+     width:170px;
      line-height:300%;
      background-color:#600fbb;
      color:#DCDCDC;
@@ -90,7 +96,7 @@ section,#menu_horizontal{
 
 #menu_vertical a{
     display:block;
-    width:160%;
+    width:100%;
     line-height:300%;
     color:#600fbb;
     background-color:#DCDCDC;
@@ -99,14 +105,14 @@ section,#menu_horizontal{
     margin:0;
 }
 
-@keyframes anim_menu {
+@keyframes anim_menu{
     from {
-        width: 160%;
+        width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
     to {
-        width:200%;
+        width:150%;
         color:#DCDCDC;
         background-color:#600fbb;
     }
@@ -114,12 +120,12 @@ section,#menu_horizontal{
 
 @-webkit-keyframes anim_menu{
     from {
-        width: 160%;
+        width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
     to {
-        width:200%;
+        width:150%;
         color:#DCDCDC;
         background-color:#600fbb;
     }
@@ -127,12 +133,12 @@ section,#menu_horizontal{
 
 @-moz-keyframes anim_menu{
      from {
-        width: 160%;
+        width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
     to {
-        width:200%;
+        width:150%;
         color:#DCDCDC;
         background-color:#600fbb;
     }
@@ -140,21 +146,18 @@ section,#menu_horizontal{
 
 @-o-keyframes anim_menu {
      from {
-        width: 160%;
+        width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
     to {
-        width:200%;
+        width:150%;
         color:#DCDCDC;
         background-color:#600fbb;
     }
 }
 
 #menu_vertical a:hover{
-   animation-name: anim_menu;
-   animation-duration: 1s;
-   animation-fill-mode:forwards;
    -moz-animation-name: anim_menu;
    -moz-animation-duration:1s;
    -moz-animation-fill-mode:forwards;
@@ -164,6 +167,9 @@ section,#menu_horizontal{
    -o-animation-name:anim_menu;
    -o-animation-duration:1s;
    -o-animation-fill-mode:forwards;
+   animation-name: anim_menu;
+   animation-duration: 1s;
+   animation-fill-mode:forwards;
 }
 
 #menu_principal{
@@ -178,6 +184,8 @@ section,#menu_horizontal{
     padding:1em 7% 1em 7%;
     border-radius: 4px;
     margin-right:1%;
+    text-decoration: none;
+    color: black;
 }
 
 #menu_principal a:hover{
@@ -186,15 +194,51 @@ section,#menu_horizontal{
     color:blue;
 }
 
-#menu_principal a{
-    text-decoration: none;
-    color: black;
-}
-
 #corps_accueil{
     clear:left;
+    padding-top:1%;
 }
 
 #corps_accueil h2{
     text-align: center;
+}
+
+#corps_langages{
+    clear:left;
+    padding-top:1%;
+}
+
+.ajout_langage{
+    margin-right:2%;
+}
+
+#bouton_ajout:hover{
+    cursor:pointer;
+}
+
+.section_langage{
+    margin-top:4%;
+}
+
+.suppr_langage:hover{
+    cursor:pointer;
+}
+
+.souligne{
+    text-decoration:underline;
+}
+
+.jauge{
+    width:30%;
+    margin-right:10%;
+}
+
+.titre_langage{
+    text-transform:uppercase;
+    display:block;
+}
+
+.modif{
+    margin-right:10%;
+    width:15%;
 }

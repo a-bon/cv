@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="CV - Portfolio">
+    <meta name="author" content="Adrien BON">
+    <title> CV </title>
+    <link rel="stylesheet" type="text/css" href="CSS/cv.css" />
+</head>
+<body>
+
+    <!-- Menu horizontal-->
+    <nav id="menu_horizontal">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="langages.html">Langages Informatiques</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Menu vertical-->
+    <nav id="menu_vertical">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="langages.html">Langages Informatiques</a></li>
+        </ul>
+    </nav>
+
+    <section id="corps_langages">
+
+        <h1 class="titre">Langages Informatiques</h1>
+        <hr />
+        <section id="ajout_langage">
+            <p>Ajouter un langage :</p>
+            <p>
+
+                <label for="nom_ajout_langages">Langage: </label>
+                <input type="text" id="nom_ajout_langage" class="ajout_langage" />
+
+                <label for="value_ajout_langage">Valeur: </label>
+                <input type="number" id="value_ajout_langage" value="1" min="0" max="100" />
+
+                <label for="type_ajout_langage">Type Langage: </label>
+                <select id="type_ajout_langage" class="ajout_langage">
+                    <option value="web">Web</option>
+                    <option value="framework">Libraries/Framework</option>
+                    <option value="autre">Autres langages</option>
+                </select>
+                
+                <button id="bouton_ajout" class="ajout_langage"><img src="images/plus79.png" alt="ajouter" title="ajouter" /></button>
+            </p>
+        </section>
+
+        <section id="web" class="section_langage">
+            <h3 class="souligne">Langages du Web</h3>
+
+            <p id="bloc_html">
+
+                <label for="html" class="titre_langage">html</label>
+                <meter class="jauge" id="html" value="90" min="0" low="20" high="60" optimum="85" max="100"></meter> 
+
+                <label for="modif_html">Modifier: </label>
+                <input class="modif" type="number" id="modif_html" value="90" min="0" max="100" />
+
+                <button id="suppr_html" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
+            </p>
+
+            <p id="bloc_css">
+
+                <label for="css" class="titre_langage">css</label>
+                <meter class="jauge" id="css" value="75" min="0" low="20" high="60" optimum="85" max="100"></meter>
+
+                <label for="modif_css">Modifier: </label>
+                <input class="modif" type="number" id="modif_css" value="75" min="0" max="100" />
+
+                <button id="suppr_css" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
+            </p>
+
+            <p id="bloc_javascript">
+
+                <label for="javascript" class="titre_langage">javascript</label>
+                <meter class="jauge" id="javascript" value="50" min="0" low="20" high="60" optimum="85" max="100"></meter>
+
+                <label for="modif_javascript">Modifier: </label>
+                <input class="modif" type="number" id="modif_javascript" value="50" min="0" max="100" />
+
+                <button id="suppr_javascript" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
+            </p>
+
+            <p id="bloc_php">
+
+                <label for="php" class="titre_langage">php</label>
+                <meter class="jauge" id="php" value="70" min="0" low="20" high="60" optimum="85" max="100"></meter>
+
+                <label for="modif_php">Modifier: </label>
+                <input class="modif" type="number" id="modif_php" value="70" min="0" max="100" />
+
+                <button id="suppr_php" class="suppr_langage"><img src="images/minus75.png" alt="suppr" title="supprimer" /></button>
+            </p>
+
+        </section>
+
+        <section id="framework" class="section_langage">
+            <h3 class="souligne">Libraries/Frameworks</h3>
+
+            <p id="bloc_jquery">
+
+                <label for="jquery" class="titre_langage">jquery</label>
+                <meter class="jauge" id="jquery" value="80" min="0" low="20" high="60" optimum="85" max="100"></meter>
+
+                <label for="modif_jquery">Modifier: </label>
+                <input class="modif" type="number" id="modif_jquery" value="80" min="0" max="100" />
+
+                <button id="suppr_jquery" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
+            </p>
+
+            <p id="bloc_angular_js">
+
+                <label for="angular_js" class="titre_langage">angular_js</label>
+                <meter class="jauge" id="angular_js" value="80" min="0" low="20" high="60" optimum="85" max="100"></meter>
+
+                <label for="modif_angular_js">Modifier: </label>
+                <input class="modif" type="number" id="modif_angular_js" value="80" min="0" max="100" />
+
+                <button id="suppr_angular_js" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
+            </p>
+
+        </section>
+
+        <section id="autre" class="section_langage">
+            <h3 class="souligne">Autres langages</h3>
+
+            <p id="bloc_java">
+
+                <label for="java" class="titre_langage">java</label>
+                <meter class="jauge" id="java" value="10" min="0" low="20" high="60" optimum="85" max="100"></meter>
+
+                <label for="modif_java">Modifier: </label>
+                <input class="modif" type="number" id="modif_java" value="10" min="0" max="100" />
+
+                <button id="suppr_java" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
+            </p>
+
+        </section>
+
+    </section>
+
+    <script type="text/javascript" src="js/appli_langage.js"></script>
+</body>
+</html>
