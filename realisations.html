@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="CV - Portfolio">
+    <meta name="author" content="Adrien BON">
+    <title> CV </title>
+    <link rel="stylesheet" type="text/css" href="CSS/cv.css" />
+</head>
+<body>
+
+    <!-- Menu horizontal-->
+    <nav id="menu_horizontal">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="experiences.html">Expériences Pro</a></li>
+            <li><a href="langages.html">Langages Informatiques</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Menu vertical-->
+    <nav id="menu_vertical">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="experiences.html">Expériences Pro</a></li>
+            <li><a href="langages.html">Langages Informatiques</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="corps">
+        <h1 class="titre">Réalisations</h1>
+        <hr />
+
+        <p id="choix_appli">
+            <span id="film" class="lien_appli">Application Films</span>
+            <span id="gpi" class="lien_appli">Gestion Parc Informatique</span>
+            <span id="prev" class="lien_appli">Préventif Client</span>
+        </p>
+
+        <section id="affich_appli">
+
+            <h3 id="titre_appli" class="souligne"></h3>
+
+            <span class="message_appli souligne">
+                Description de l'application:
+            </span>
+
+            <p id="descriptif_appli_film">
+                Application permettant l'inventaire de films avec certaines caractéristiques comme la durée ou la qualité.<br />
+                Application développée avec HTML5, CSS, le framework AngularJS ainsi que PHP pour la partie serveur.<br />
+                Les données sont stockées dans une base MYSQL.
+            </p>
+
+            <p id="descriptif_appli_gpi">
+                Application développée en groupe dans le cadre d'un projet de développement en BTS.<br />
+                Celle-ci permet de simuler une application de gestion de parc informatique avec gestion des postes et des utilisateurs.<br />
+                Application développée avec HTML, CSS et PHP. Le javascript est utilisé uniquement pour afficher des pops-up.
+            </p>
+
+            <p id="descriptif_appli_prev">
+                Application développée dans le cadre de mon alternance dans l'entreprise Régis Martelet pour faire su suivi client.<br />
+                Cette application permet selon des critères défini par l'utilisateur permet d'afficher les expéditions pour la période donnée.<br />
+                Elle permet ensuite de valider certaines expéditions ou d'en reporter le suivi.<br />
+                Application réalisée en HTML, CSS, jQuery pour la partie javascript et PHP pour la partie serveur.
+            </p>
+
+            <span class="message_appli souligne">Captures d'écran :</span>
+
+            <div id="img_film" class="images_appli">
+
+                <p>
+                    <img src="images/film1.png" alt="film1" class="img_appli" /><br />
+                    Affichage principal des films avec section de filtrage
+                </p>
+
+                <p>
+                    <img src="images/film2.png" alt="film2" class="img_appli" /> ><br />
+                    Ajout d'un film à partir d'un pop-up
+                </p>
+
+                <p>
+                    <img src="images/film3.png" alt="film3" class="img_appli" /><br />
+                    Page de sélection des critères pour créer un export excel
+                </p>
+
+            </div>
+
+            <div id="img_gpi" class="images_appli">
+
+                <p>
+                    <img src="images/gpi1.png" alt="gpi1" class="img_appli" /><br />
+                    Fenêtre d'ajout de fonctionnalités comme une application
+                </p>
+
+                <p>
+                    <img src="images/gpi2.png" alt="gpi2" class="img_appli" /><br />
+                    Création de poste
+                </p>
+
+                <p>
+                    <img src="images/gpi3.png" alt="gpi3" class="img_appli" /><br />
+                    Page de création de ticket pour l'utilisateur
+                </p>
+
+            </div>
+
+            <div id="img_prev" class="images_appli">
+
+                <p>
+                    <img src="images/prev1.png" alt="prev1" class="img_appli" /><br />
+                    Page de sélection des critères avant la création dynamique de la requête
+                </p>
+
+                <p>
+                    <img src="images/prev2.png" alt="prev2" class="img_appli" /><br />
+                    Affichage du tableau des expéditions
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </section>
+    
+    <script type="text/javascript" src="js/appli_realisation"></script>
+</body>
+</html>
