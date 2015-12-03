@@ -278,3 +278,35 @@ textarea{
 #sujet_message{
     width: 49%;
 }
+
+#proprietes{
+    float:left;
+    width:35%;
+    border-right: 1px solid black;
+    margin-bottom:5%;
+}
+
+#modification{
+    width:50%;
+    margin-left:50%;
+    margin-top:25%;
+}
+
+#modif{
+    width:80%;
+    padding:0;
+    margin:10% 10% 10% 10%;
+    height:200px;
+    background-color:mediumpurple;
+}
+
+
+.explication_prop{
+    display:block;
+    margin-bottom:2%;
+    margin-top:8%;
+}
+
+.prop{
+    display:block;
+}

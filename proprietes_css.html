@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Adrien BON">
+    <title> CV </title>
+    <link rel="stylesheet" type="text/css" href="CSS/cv.css" />
+</head>
+<body>
+
+    <!-- Menu horizontal-->
+    <nav id="menu_horizontal">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="langages.html">Langages Informatiques</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="proprietes_css.html">Propriétés CSS</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Menu vertical-->
+    <nav id="menu_vertical">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="langages.html">Langages Informatiques</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="proprietes_css.html">Propriétés CSS</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="corps">
+
+        <h1 class="titre">Propriétés CSS</h1>
+        <hr />
+
+        <section id="proprietes">
+
+            <div id="bdrs">
+                <span class="explication_prop souligne">Border radius (Coins arrondis)<br />(valeurs en %):</span>
+
+                <label for="bdrs_hg" class="prop">Coin Haut Gauche :</label>
+                <input type="number" id="bdrs_hg" />
+                <label for="bdrs_hd" class="prop">Coin Haut Droit : </label>
+                <input type="number" id="bdrs_hd" />
+                <label for="bdrs_bg" class="prop">Coin Bas Gauche : </label>
+                <input type="number" id="bdrs_bg" />
+                <label for="bdrs_bd" class="prop">Coin Bas Droit : </label>
+                <input type="number" id="bdrs_bd" />
+
+                <span class="explication_prop souligne">
+                    Box Shadow (Ombre)<br />
+                    (valeurs en pixels, peuvent être négatives)<br/>
+                    (Toutes les valeurs doivent être renseignées)
+                </span>
+
+                <label for="bs_a" class="prop">Abscisse :</label>
+                <input type="number" id="bs_a" />
+                <label for="bs_o" class="prop">Ordonnee :</label>
+                <input type="number" id="bs_o" />
+                <label for="bs_flou" class="prop">Flou : </label>
+                <input type="number" id="bs_flou" />
+                <label for="bs_dist" class="prop">Distance : </label>
+                <input type="number" id="bs_dist" />
+                <label for="bs_col" class="prop">Couleur : </label>
+                <input type="color" id="bs_col" value="#ba7755" />
+
+                <span class="explication_prop souligne">
+                    Dégradé<br />
+                    (valeurs en degré)
+                </span>
+
+                <label for="deg_deg" class="prop">Degré :</label>
+                <input type="number" id="deg_deg" placeholder="optionnel si radial" />
+                <label for="deg_col1" class="prop">Couleur 1: </label>
+                <input type="color" id="deg_col1" value="#ba7755" />
+                <label for="deg_col2" class="prop">Couleur 2: </label>
+                <input type="color" id="deg_col2" value="#445566" />
+                <label for="deg_type" class="prop">Type: </label>
+                <select id="deg_type">
+                    <option value="linear">Linéaire</option>
+                    <option value="radial">Radial</option>
+                </select>
+
+                <span class="explication_prop souligne">
+                    Rotation<br />
+                    (valeurs en degré)
+                </span>
+
+                <label for="rotate_deg" class="prop">Degré :</label>
+                <input type="number" id="rotate_deg" />
+    
+            </div>
+
+        </section>
+
+
+        <section id="modification">
+
+            <div id="modif"></div>
+
+        </section>
+
+    </section>
+
+    <script src="js/appli_css.js" type="text/javascript"></script>
+
+</body>
+</html>
