@@ -80,7 +80,6 @@ body section{
     margin-top:9%;
     margin-left:0;
     padding-left:0;
-    text-align:left;
 }
 
 #menu_vertical ul{
@@ -95,80 +94,74 @@ body section{
 
 #menu_vertical a{
     display:block;
-    width:100%;
+    width:110%;
     line-height:300%;
-    color:#600fbb;
     background-color:#DCDCDC;
+    color:#600fbb;
     text-decoration:none;
     text-align:center;
     margin:0;
 }
 
-@keyframes anim_menu{
-    from {
+@-moz-keyframes anim_menu{
+     0%{
         width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
-    to {
+    100%{
         width:150%;
-        color:#DCDCDC;
         background-color:#600fbb;
+        color:#DCDCDC;
     }
 }
 
 @-webkit-keyframes anim_menu{
-    from {
+    0%{
         width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
-    to {
+    100%{
         width:150%;
-        color:#DCDCDC;
         background-color:#600fbb;
-    }
-}
-
-@-moz-keyframes anim_menu{
-     from {
-        width: 100%;
-        background-color:#DCDCDC;
-        color:#600fbb;
-    }
-    to {
-        width:150%;
         color:#DCDCDC;
-        background-color:#600fbb;
     }
 }
 
 @-o-keyframes anim_menu {
-     from {
+     0%{
         width: 100%;
         background-color:#DCDCDC;
         color:#600fbb;
     }
-    to {
+    100%{
         width:150%;
-        color:#DCDCDC;
         background-color:#600fbb;
+        color:#DCDCDC;
     }
 }
 
+@keyframes anim_menu{
+    0%{
+        width: 105%;
+        background-color:#DCDCDC;
+        color:#600fbb;
+    }
+    100%{
+        background-color:#600fbb;
+        color:#DCDCDC;
+        width:150%;
+    }
+}
+
+/* L'animation ne fonctionne pascomplètement sur Chrome, le changement de couleur se fait uniquement sur les liens non visités
+    Impossible de réinitialiser cette propriété en javascript */
 #menu_vertical a:hover{
-   -moz-animation-name: anim_menu;
-   -moz-animation-duration:1s;
-   -moz-animation-fill-mode:forwards;
-   -webkit-animation-name:anim_menu;
-   -webkit-animation-duration:1s;
-   -webkit-animation-fill-mode:forwards;
-   -o-animation-name:anim_menu;
-   -o-animation-duration:1s;
-   -o-animation-fill-mode:forwards;
-   animation-name: anim_menu;
-   animation-duration: 1s;
-   animation-fill-mode:forwards;
+   -moz-animation: anim_menu 1s forwards;
+   -webkit-animation:anim_menu 1s forwards;
+   -o-animation:anim_menu 1s forwards;
+   animation: anim_menu 1s forwards;
 }
 
 #menu_principal{
@@ -269,6 +262,10 @@ body section{
 
 .img_appli{
     width:92%;
+    -moz-box-shadow: -10px -10px 5px -2px #A9A9A9;
+    -webkit-box-shadow: -10px -10px 5px -2px #A9A9A9;
+    -o-box-shadow: -10px -10px 5px -2px #A9A9A9;
+    box-shadow: -10px -10px 5px -2px #A9A9A9;
 }
 
 .img_appli:hover{
