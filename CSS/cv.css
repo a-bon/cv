@@ -2,6 +2,7 @@
 body{
     margin-left:0;
     padding-left:0;
+    background-image: url('../images/fond.png');
 }
 
 .titre{
@@ -40,6 +41,20 @@ body section{
 
 .competences{
     list-style-type:none;
+}
+
+#presentation{
+    float: left;
+    width:25%;
+    height:60em;
+    background-color: #600fbb;
+    opacity: 0.3;
+    border:1px solid black;
+    margin:1% 2% 1% 2%;
+}
+
+#cv{
+    margin:0;
 }
 
 #menu_horizontal{

@@ -49,6 +49,7 @@ var ajoute_langage = function()
             var button = document.createElement('button');
             button.setAttribute('id', 'suppr_' + ajout_langage.value.toLowerCase());
             button.setAttribute('class', 'suppr_langage');
+            button.style.marginLeft = "0.4%";
 
             button.addEventListener('click', suppr_langage, false);
 
