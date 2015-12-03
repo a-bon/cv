@@ -118,45 +118,6 @@ body section{
     margin:0;
 }
 
-@-moz-keyframes anim_menu{
-     0%{
-        width: 100%;
-        background-color:#DCDCDC;
-        color:#600fbb;
-    }
-    100%{
-        width:150%;
-        background-color:#600fbb;
-        color:#DCDCDC;
-    }
-}
-
-@-webkit-keyframes anim_menu{
-    0%{
-        width: 100%;
-        background-color:#DCDCDC;
-        color:#600fbb;
-    }
-    100%{
-        width:150%;
-        background-color:#600fbb;
-        color:#DCDCDC;
-    }
-}
-
-@-o-keyframes anim_menu {
-     0%{
-        width: 100%;
-        background-color:#DCDCDC;
-        color:#600fbb;
-    }
-    100%{
-        width:150%;
-        background-color:#600fbb;
-        color:#DCDCDC;
-    }
-}
-
 @keyframes anim_menu{
     0%{
         width: 105%;

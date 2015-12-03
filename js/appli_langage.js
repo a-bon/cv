@@ -17,7 +17,6 @@ var ajoute_langage = function()
             p.setAttribute('id', bloc.toLowerCase());
 
             var label1 = document.createElement('label');
-            label1.setAttribute('for', ajout_langage.value.toLowerCase());
             label1.setAttribute('class', 'titre_langage');
             label1.innerHTML = ajout_langage.value.toLowerCase();
 
