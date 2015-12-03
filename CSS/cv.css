@@ -261,3 +261,20 @@ body section{
 #affich_appli{
     display:none;
 }
+
+.label_contact{
+    display: block;
+    margin-top: 5%;
+}
+
+#form_contact{
+    padding-left: 33%;
+}
+
+textarea{
+    display: block;
+}
+
+#sujet_message{
+    width: 49%;
+}
