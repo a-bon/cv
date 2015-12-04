@@ -1,8 +1,12 @@
 // JavaScript source code
 
+// fonction de modification du border-radius
 var bdrs = function (elem) {
+
+    // récupération de l'id du champ modifié
     var element = elem.target.id;
-    
+
+    // suivant le champ modifié, la valeur du border-radius du coin correspondant est modifiée
     if(element == "bdrs_hg")
     {
         bloc.style.borderTopLeftRadius = bdrs_hg.value + "%";
@@ -19,8 +23,11 @@ var bdrs = function (elem) {
     }
 }
 
+// fonction de modification du box-shadow
 var bs=function()
 {
+    // pour tous les champs associés à la modification du box-shadow on met à jour la valeur de cette propriété
+    // utilisaion des préfixes des différents navigateurs pour une meilleur compatibilité
     bloc.style.boxShadow = bs_a.value + "px " + bs_o.value + "px " + bs_flou.value + "px " + bs_dist.value + "px " + bs_col.value;
     bloc.style.MozBoxShadow = bs_a.value + "px " + bs_o.value + "px " + bs_flou.value + "px " + bs_dist.value + "px " + bs_col.value;
     bloc.style.WebkitBoxShadow = bs_a.value + "px " + bs_o.value + "px " + bs_flou.value + "px " + bs_dist.value + "px " + bs_col.value;
@@ -29,8 +36,10 @@ var bs=function()
 
 }
 
+// fonction de modification du dégradé
 var deg=function()
 {
+    // suivant la valeur de la liste déroulante on effectue un dégradé linéaire ou radial avec les valeurs des différents couleurs et des degrés
     if (deg_type.value == "linear")
     {
         var gradient = deg_type.value + "-gradient(" + deg_deg.value + "deg," + deg_col1.value + "," + deg_col2.value + ")";
@@ -39,7 +48,8 @@ var deg=function()
     {
         var gradient = deg_type.value + "-gradient(" + deg_col1.value + "," + deg_col2.value + ")";
     }
-    
+
+    // utilisaion des préfixes des différents navigateurs pour une meilleur compatibilité
     bloc.style.backgroundImage = "-webkit-" + gradient;
     bloc.style.backgroundImage = "-moz-" + gradient;
     bloc.style.backgroundImage = "-ms-" + gradient;
@@ -57,9 +67,11 @@ var rotate=function()
     {
         bloc.style.transform = "rotate(" + rotate_deg.value + "deg)";
     }
-    
+
 }
 
+
+//récupération des objets html
 var bdrs_hg = document.getElementById('bdrs_hg');
 var bdrs_bg = document.getElementById('bdrs_bg');
 var bdrs_hd = document.getElementById('bdrs_hd');
@@ -80,6 +92,8 @@ var rotate_deg = document.getElementById('rotate_deg');
 
 var bloc = document.getElementById('modif');
 
+
+//ajout des écouteurs sur les différents évènements
 bdrs_hg.addEventListener('keyup', bdrs, false);
 bdrs_hg.addEventListener('mouseup', bdrs, false);
 bdrs_bg.addEventListener('keyup', bdrs, false);

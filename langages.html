@@ -33,20 +33,26 @@
         </ul>
     </nav>
 
+    <!-- Corps page langages -->
     <section class="corps">
 
         <h1 class="titre">Langages Informatiques</h1>
         <hr />
+
+        <!-- Bloc ajout d'un langage -->
         <section id="ajout_langage">
             <p>Ajouter un langage :</p>
             <p>
 
+                <!-- champ texte ajout langage -->
                 <label for="nom_ajout_langage">Langage: </label>
                 <input type="text" id="nom_ajout_langage" class="ajout_langage" />
 
+                <!-- champ nombre acquisition langage -->
                 <label for="value_ajout_langage">Valeur: </label>
                 <input type="number" id="value_ajout_langage" value="1" min="0" max="100" />
 
+                <!-- liste déroulante type langage(web,framework,autre) -->
                 <label for="type_ajout_langage">Type Langage: </label>
                 <select id="type_ajout_langage" class="ajout_langage">
                     <option value="web">Web</option>
@@ -54,21 +60,27 @@
                     <option value="autre">Autres langages</option>
                 </select>
 
+                <!-- bouton ajout langage -->
                 <button id="bouton_ajout" class="ajout_langage"><img src="images/plus79.png" alt="ajouter" title="ajouter" /></button>
             </p>
         </section>
 
+        <!-- section langage web -->
         <section id="web" class="section_langage">
             <h3 class="souligne">Langages du Web</h3>
 
+            <!-- bloc langage (ici html) -->
             <p id="bloc_html">
 
+                <!-- nom langage et jauge acquisition langage (champ meter non reconnu IE, edge) -->
                 <label class="titre_langage">html</label>
                 <meter class="jauge" id="html" value="90" min="0" low="20" high="60" optimum="85" max="100"></meter>
 
+                <!-- champ number pour modification de la jauge correspondante -->
                 <label for="modif_html">Modifier: </label>
                 <input class="modif" type="number" id="modif_html" value="90" min="0" max="100" />
 
+                <!-- bouton pour suppression du langage correspondant -->
                 <button id="suppr_html" class="suppr_langage"><img src="images/minus75.png" alt="suppr" /></button>
             </p>
 
@@ -107,6 +119,7 @@
 
         </section>
 
+        <!-- section framework,librairies -->
         <section id="framework" class="section_langage">
             <h3 class="souligne">Libraries/Frameworks</h3>
 
@@ -134,6 +147,7 @@
 
         </section>
 
+        <!-- section autres langages -->
         <section id="autre" class="section_langage">
             <h3 class="souligne">Autres langages</h3>
 
@@ -152,6 +166,7 @@
 
     </section>
 
+    <!-- script javascript associé à la page -->
     <script type="text/javascript" src="js/appli_langage.js"></script>
 </body>
 </html>

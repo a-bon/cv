@@ -33,24 +33,31 @@
         </ul>
     </nav>
 
+    <!-- corps page réalisations -->
     <section class="corps">
         <h1 class="titre">Réalisations</h1>
         <hr />
 
+        <!-- bloc sélection application à afficher -->
         <p id="choix_appli">
             <span id="film" class="lien_appli">Application Films</span>
             <span id="gpi" class="lien_appli">Gestion Parc Informatique</span>
             <span id="prev" class="lien_appli">Préventif Client</span>
         </p>
 
+        <!-- section affichage des informations de l'appli suivant le choix effectué -->
+        <!-- après clic sur un lien d'une appli, les informations concernant l'appli sont affichées par le javascript -->
         <section id="affich_appli">
 
+            <!-- nom de l'appli -->
             <h3 id="titre_appli" class="souligne"></h3>
 
             <span class="message_appli souligne">
                 Description de l'application:
             </span>
 
+
+            <!-- blocs description des applis -->
             <p id="descriptif_appli_film">
                 Application permettant l'inventaire de films avec certaines caractéristiques comme la durée ou la qualité.<br />
                 Application développée avec HTML5, CSS, le framework AngularJS ainsi que PHP pour la partie serveur.<br />
@@ -70,8 +77,10 @@
                 Application réalisée en HTML, CSS, jQuery pour la partie javascript et PHP pour la partie serveur.
             </p>
 
+
             <span class="message_appli souligne">Captures d'écran :</span>
 
+            <!-- bloc captures d'écran appli_film -->
             <div id="img_film" class="images_appli">
 
                 <p>
@@ -91,6 +100,8 @@
 
             </div>
 
+
+            <!-- bloc captures d'écran gestion parc info -->
             <div id="img_gpi" class="images_appli">
 
                 <p>
@@ -110,6 +121,8 @@
 
             </div>
 
+
+            <!-- bloc captures d'écran préventif client -->
             <div id="img_prev" class="images_appli">
 
                 <p>

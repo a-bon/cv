@@ -33,16 +33,21 @@
         </ul>
     </nav>
 
+
+    <!-- corps page propriétés css -->
     <section class="corps">
 
         <h1 class="titre">Propriétés CSS</h1>
         <hr />
 
+        <!-- bloc différents champs de modification -->
         <section id="proprietes">
 
+            <!-- bloc border radius -->
             <div id="bdrs">
                 <span class="explication_prop souligne">Border radius (Coins arrondis)<br />(valeurs en %):</span>
 
+                <!-- différents champs number pour gérer les quatres coins de la forme -->
                 <label for="bdrs_hg" class="prop">Coin Haut Gauche :</label>
                 <input type="number" id="bdrs_hg" />
                 <label for="bdrs_hd" class="prop">Coin Haut Droit : </label>
@@ -52,12 +57,18 @@
                 <label for="bdrs_bd" class="prop">Coin Bas Droit : </label>
                 <input type="number" id="bdrs_bd" />
 
+            </div>
+
+            <!-- bloc box shadow -->
+            <div id="bs">
                 <span class="explication_prop souligne">
                     Box Shadow (Ombre)<br />
                     (valeurs en pixels, peuvent être négatives)<br/>
                     (Toutes les valeurs doivent être renseignées)
                 </span>
 
+
+                <!-- champs number pour gérer les propriétés du box shadow -->
                 <label for="bs_a" class="prop">Abscisse :</label>
                 <input type="number" id="bs_a" />
                 <label for="bs_o" class="prop">Ordonnee :</label>
@@ -66,39 +77,56 @@
                 <input type="number" id="bs_flou" />
                 <label for="bs_dist" class="prop">Distance : </label>
                 <input type="number" id="bs_dist" />
+
+                <!-- champ color pour couleur de l'ombre -->
                 <label for="bs_col" class="prop">Couleur : </label>
                 <input type="color" id="bs_col" value="#ba7755" />
 
+            </div>
+
+            <!-- bloc dégradé -->
+            <div id="deg">
                 <span class="explication_prop souligne">
                     Dégradé<br />
                     (valeurs en degré)
                 </span>
 
+                <!-- champ number pour les degrès -->
                 <label for="deg_deg" class="prop">Degré :</label>
+
+                <!-- champs color pour les deux couleurs du dégradé -->
                 <input type="number" id="deg_deg" placeholder="optionnel si radial" />
                 <label for="deg_col1" class="prop">Couleur 1: </label>
                 <input type="color" id="deg_col1" value="#ba7755" />
                 <label for="deg_col2" class="prop">Couleur 2: </label>
                 <input type="color" id="deg_col2" value="#445566" />
+
+                <!-- liste déroulante type dégradé -->
                 <label for="deg_type" class="prop">Type: </label>
                 <select id="deg_type">
                     <option value="linear">Linéaire</option>
                     <option value="radial">Radial</option>
                 </select>
+            </div>
+
+            <!-- bloc rotation -->
+            <div id="rotate">
 
                 <span class="explication_prop souligne">
                     Rotation<br />
                     (valeurs en degré)
                 </span>
 
+                <!-- champ number pour les degrés de la rotation -->
                 <label for="rotate_deg" class="prop">Degré :</label>
                 <input type="number" id="rotate_deg" />
-    
+
             </div>
 
         </section>
 
 
+        <!-- bloc contenant la forme à modifier -->
         <section id="modification">
 
             <div id="modif"></div>

@@ -1,48 +1,48 @@
-﻿
+/*application d'une image de fond sur le body*/
+/*aucune marge et padding sur la gauche*/
+/*toutes les pages*/
 body{
     margin-left:0;
     padding-left:0;
     background-image: url('../images/fond.png');
 }
 
+/*alignement au centre des éléments de la classe titre*/
+/*toutes les pages*/
 .titre{
     text-align:center;
 }
 
+/*marge de 15% à droite et à gauche pour les sections du body*/
+/*page propriété_css*/
 body section{
     margin-left:15%;
     margin-right:15%;
 }
 
-#titre_cv{
-    text-align:center;
-}
-
-#nom{
-    text-align:center;
-}
-
-.titres_blocs{
-    text-decoration:underline;
-}
-
+/*couleur sur les titres des listes de la page cv et mise en gras*/
+/*page cv*/
 .titre_liste{
-    color:#1AB6EB;
+    color:#600fbb;
     font-weight:600;
 }
 
+/*mise en gras des titres des competences*/
+/*page cv*/
 .titre_competence{
     font-weight:600;
 }
 
-.sous_liste{
-    list-style-type:none;
-}
-
+/*pas de puce sur les listes de la classe compétences*/
+/*page cv*/
 .competences{
     list-style-type:none;
 }
 
+/*bloc de gauche du cv flottant a gauche, de couleur violet transparent*/
+/*largeur de 25% et hauteur de 60em*/
+/*marges légères sur tous les cotés et bordure noire de 1px*/
+/*page cv*/
 #presentation{
     float: left;
     width:25%;
@@ -53,25 +53,34 @@ body section{
     margin:1% 2% 1% 2%;
 }
 
-#cv{
-    margin:0;
-}
-
+/*marge de 23 à gauche sur le menu horizontal de haut de page*/
+/*page cv*/
 #menu_horizontal{
     margin-left:23%;
 }
 
-#menu_horizontal li {
-    float:left;
-    margin-right:1px;
-}
-
+/*pas de marge ni de padding sur la liste du menu horizontal*/
+/*pas de puce sur la liste*/
+/*page cv*/
 #menu_horizontal ul{
     margin:0;
     padding:0;
     list-style-type:none;
 }
 
+/*item de la liste du menu horizontal flottant à gauche avec une marge droite de 1px*/
+/*page cv*/
+#menu_horizontal li {
+    float:left;
+    margin-right:1px;
+}
+
+
+/*lien du menu horizontal de largeur de 170px et d'une hauteur de ligne de 300%*/
+/*couleur de fond violette et couleur de texte blanche*/
+/*les liens ne sont pas soulignés (text-decoration:none) et centrés*/
+/*bordures des liens arrondies de 5px*/
+/*page cv*/
 #menu_horizontal a{
      display:block;
      width:170px;
@@ -84,10 +93,13 @@ body section{
      border-radius:5px;
 }
 
+/*changement de la couleur des liens du menu horizontal lors du survol de ceux-ci*/
+/*page cv*/
 #menu_horizontal a:hover{
     background-image: linear-gradient(to bottom right, #671abe, #ebe7e7);
     color:#000000;
 }
+
 
 #menu_vertical{
     float:left;
@@ -131,7 +143,7 @@ body section{
     }
 }
 
-/* L'animation ne fonctionne pascomplètement sur Chrome, le changement de couleur se fait uniquement sur les liens non visités
+/* L'animation ne fonctionne pas complètement sur Chrome, le changement de couleur se fait uniquement sur les liens non visités
     Impossible de réinitialiser cette propriété en javascript */
 #menu_vertical a:hover{
    -moz-animation: anim_menu 1s forwards;

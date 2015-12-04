@@ -33,16 +33,25 @@
         </ul>
     </nav>
 
+    <!-- bloc formulaire de contact rediriger après validation vers page javascript -->
     <section class="corps">
         <h1 class="titre">Contact</h1>
         <hr>
         <div id="form_contact">
+
+            <!-- champ text pour nom de l'expéditeur -->
             <label for="nom_contact" class="label_contact">Votre nom: </label>
             <input type="text" id="nom_contact" />
+
+            <!-- champ text pour sujet du message -->
             <label for="sujet_message" class="label_contact">Sujet du message: </label>
             <input type="text" id="sujet_message">
+
+            <!-- textarea pour corps du message -->
             <label for="message" class="label_contact">Votre message: </label>
             <textarea id="message" cols="60" rows="20"></textarea>
+
+            <!-- bouton d'envoi du message au javascript -->
             <button id="envoyer"><span>Envoyer</span></button>
         </div>
     </section>
