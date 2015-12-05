@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../font/font.ttf') format('truetype');
+}
+
+@keyframes anim_menu{
+    0%{
+        width: 105%;
+        background-color:#DCDCDC;
+        color:#600fbb;
+    }
+    100%{
+        background-color:#600fbb;
+        color:#DCDCDC;
+        width:150%;
+    }
+}
+
+#titre_accueil{
+    font-family:myfont;
+    color:#880fbb;
+}
+
 /*application d'une image de fond sur le body*/
 /*aucune marge et padding sur la gauche*/
 /*toutes les pages*/
@@ -33,24 +56,69 @@ body section{
     font-weight:600;
 }
 
-/*pas de puce sur les listes de la classe compétences*/
-/*page cv*/
-.competences{
-    list-style-type:none;
-}
-
 /*bloc de gauche du cv flottant a gauche, de couleur violet transparent*/
-/*largeur de 25% et hauteur de 60em*/
+/*largeur de 25% et hauteur de 63em*/
 /*marges légères sur tous les cotés et bordure noire de 1px*/
 /*page cv*/
 #presentation{
     float: left;
     width:25%;
-    height:60em;
-    background-color: #600fbb;
-    opacity: 0.3;
+    height:63em;
+    background-image:url("../images/fond_transparent.png");
     border:1px solid black;
     margin:1% 2% 1% 2%;
+    font-family:Tahoma;
+}
+
+#photo_identite
+{
+    margin:10% 33% 10% 33%;
+    width:33%;
+    height:15%;
+    padding:0;
+}
+
+.centre{
+    text-align:center;
+}
+
+#nom_cv{
+    font-size:1.2em;
+}
+
+#adresse_tel_cv{
+    margin-top:10%;
+}
+
+#mail_cv{
+    margin-top:10%;
+}
+
+#age_cv{
+    margin-top:10%;
+}
+
+#langue_cv{
+    margin-top:20%;
+}
+
+#titre_langue_cv{
+    font-size:1.2em;
+    display:block;
+}
+
+#liste_langue_cv{
+    margin-left:15%;
+}
+
+#titre_interet_cv{
+    margin-top:15%;
+    font-size:1.2em;
+    display:block;
+}
+
+#liste_interet_cv{
+    margin-left:15%;
 }
 
 /*marge de 23 à gauche sur le menu horizontal de haut de page*/
@@ -130,19 +198,6 @@ body section{
     margin:0;
 }
 
-@keyframes anim_menu{
-    0%{
-        width: 105%;
-        background-color:#DCDCDC;
-        color:#600fbb;
-    }
-    100%{
-        background-color:#600fbb;
-        color:#DCDCDC;
-        width:150%;
-    }
-}
-
 /* L'animation ne fonctionne pas complètement sur Chrome, le changement de couleur se fait uniquement sur les liens non visités
     Impossible de réinitialiser cette propriété en javascript */
 #menu_vertical a:hover{
@@ -174,7 +229,7 @@ body section{
     border-right-color:blue;
     border-bottom-color: blue;
     color:blue;
-    border-radius:50%;
+    border-radius:5%;
     border-width:2px;
 }
 
@@ -235,6 +290,30 @@ body section{
     border:1px solid black;
 }
 
+@media screen and (max-width : 1650px) {
+    #choix_appli {
+        margin-left: 5%;
+        margin-bottom: 4%;
+    }
+
+    .lien_appli {
+        padding: 1% 5% 1% 5%;
+        margin-right: 5%;
+        border: 1px solid black;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    #choix_appli {
+        margin-left: 5%;
+        margin-bottom: 4%;
+    }
+
+    .lien_appli {
+        display:block;
+    }
+}
+
 .lien_appli:hover{
     cursor:pointer;
     background-image: linear-gradient(to bottom right, #671abe, #ebe7e7);
@@ -285,6 +364,7 @@ body section{
 
 textarea{
     display: block;
+    margin-bottom:5%;
 }
 
 #sujet_message{

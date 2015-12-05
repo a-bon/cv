@@ -39,46 +39,103 @@
         <!-- Bloc présentation personnelle (adresse, âge, ...) -->
         <section id="presentation">
 
+            <img src="images/photo_identite.png" alt="photo_identité" id="photo_identite" />
+
+            <p id="nom_cv" class="centre">Adrien BON</p>
+
+            <p id="adresse_tel_cv" class="centre">
+                6 rue des bleuets<br />
+                21170 Losne<br />
+                06.11.20.05.54
+            </p>
+
+            <p class="centre" id="mail_cv">
+                <a href="mailto:adrienbon@free.fr">adrienbon@free.fr</a>
+            </p>
+
+            <p class="centre" id="age_cv">
+                25 ans
+            </p>
+
+            <p class="centre" id="permis_cv">
+                Permis B<br />
+                Véhicule
+            </p>
+
+            <p class="centre" id="langue_cv">
+                <span id="titre_langue_cv" class="souligne">Langues</span><br/>
+                <ul id="liste_langue_cv">
+                    <li>Niveau BTS en Anglais</li>
+                    <li>Notions en Espagnol</li>
+                </ul>
+            </p>
+
+            <p class="centre" id="interet_cv">
+                <span id="titre_interet_cv" class="souligne">Centres d'interêt</span>
+                <ul id="liste_interet_cv">
+                    <li>Sport</li>
+                    <li>Musique</li>
+                </ul>
+            </p>
+
         </section>
 
         <!-- Bloc principal du cv (Formations, expériences, ...)-->
         <section id="cv">
             <h1 class="titre">CV</h1>
+            <hr />
 
             <!-- Bloc formations -->
             <div id="formations">
                 <h3 class="souligne">Formations</h3>
+                <p id="licence">
+                    <strong>Licence Professionnelle Systèmes Informatiques et Logiciels </strong><br />
+                    2015-2016 - Université de Bourgogne
+                </p>
                 <p id="bts">
-                    <strong>BTS Services Informatiques aux Organisations</strong> spécialité Solutions d'Infrastructure, Systèmes et réseau<br/>
+                    <strong>BTS Services Informatiques aux Organisations</strong> spécialité Solutions d'Infrastructure, Systèmes et réseau<br />
                     2013-2015 - Dijon Formation
                 </p>
                 <p>
-                    <strong>Baccalauréat Scientifique</strong> Spécialité Physique-chimie Mention AB<br/>
+                    <strong>Baccalauréat Scientifique</strong> Spécialité Physique-chimie Mention AB<br />
                     2005-2008 - Lycée Prieur de la Côte d'Or
                 </p>
             </div>
 
-            <hr/>
+            <hr />
 
             <!-- Bloc expériences -->
             <div id="experiences">
+
                 <h3 class="souligne">Expériences Professionnelles</h3>
-                <p id="ce"><strong>Alternance Assistance Informatique</strong><br/>
+
+                <p id="martelet">
+                    <strong class="souligne">
+                        Alternance Assistant DSI
+                    </strong><br />
+                    Régis Martelet (2015 - ) :
+                </p>
+
+                <!-- liste différentes mission -->
+                <ul id="missions_martelet">
+                    <li><span class="titre_liste">Développement d'application Web :</span> application suivi client, passage d’une application client lourd(Windev) en application web.</li>
+                    <li><span class="titre_liste">Mise en place d’une solution e-commerce  : </span>Choix du CMS (Prestashop), Création d’un cahier des charges.</li>
+                </ul>
+
+                <p id="ce">
+                    <strong class="souligne">Alternance Assistance Informatique</strong><br />
                     Caisse d'Epargne de Bourgogne Franche-Comté (2013-2015) :
                 </p>
 
                 <!-- liste différentes mission -->
                 <ul id="missions_ce">
                     <li><span class="titre_liste">Installation de matériel informatique :</span> postes fixes, portables, imprimantes, téléphones IP.</li>
-                    <li class="competences"><span class="titre_competence">Compétences acquises : </span>préparation, gestion de planning, organisation.<br/><br /></li>
                     <li><span class="titre_liste">Rédaction de documentations : </span>Création et mise à jour de différentes documentations techniques ou destinées aux utilisateurs.</li>
-                    <li class="competences"><span class="titre_competence">Compétences acquises : </span>mise à jour des informations, synthétisation, accessibilité de l’information.<br /><br /></li>
                     <li><span class="titre_liste">Assistance aux utilisateurs : </span> Gestion des incidents et des demandes des utilisateurs.</li>
-                    <li class="competences"><span class="titre_competence">Compétences acquises : </span>réactivité, autonomie, gestion des priorités.<br /><br /></li>
                 </ul>
             </div>
 
-            <hr/>
+            <hr />
 
             <!-- Bloc informatique (langages dev, réseau) -->
             <div id="informatique">
@@ -106,7 +163,7 @@
                     </ul>
                 </div>
             </div>
-           </section>
+        </section>
     </section>
 
 
