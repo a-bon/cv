@@ -1,8 +1,13 @@
+/*création d'une police de nom myfont'*/
+/*page accueil*/
 @font-face {
     font-family: 'myfont';
     src: url('../font/font.ttf') format('truetype');
 }
 
+/*animation sur menu vertical avec inversion des couleurs de fond details de texte*/ 
+/*agrandissement de la largeur du lien*/
+/*toutes les pages*/
 @keyframes anim_menu{
     0%{
         width: 105%;
@@ -16,9 +21,14 @@
     }
 }
 
-#titre_accueil{
-    font-family:myfont;
-    color:#880fbb;
+/*classe appliquée à tous les blocs principaux des pages*/
+/* annulation du float left et marge à gauche et à droite de 15%*/
+/*toutes les pages*/
+.corps{
+    clear:left;
+    margin-left:15%;
+    margin-right:15%;
+    padding-top:1%;
 }
 
 /*application d'une image de fond sur le body*/
@@ -35,6 +45,19 @@ body{
 .titre{
     text-align:center;
 }
+
+/* classe permettant de centré certains textes*/
+.centre{
+    text-align:center;
+}
+
+/*titre page d'accueil avec la police créée*/
+/*page accueil*/
+#titre_accueil{
+    font-family:myfont;
+    color:#880fbb;
+}
+
 
 /*marge de 15% à droite et à gauche pour les sections du body*/
 /*page propriété_css*/
@@ -70,6 +93,8 @@ body section{
     font-family:Tahoma;
 }
 
+/*photo d'identité du cv centrée*/
+/*paage cv*/
 #photo_identite
 {
     margin:10% 33% 10% 33%;
@@ -78,14 +103,16 @@ body section{
     padding:0;
 }
 
-.centre{
-    text-align:center;
-}
 
+
+/* agrandissement de la taille de la police sur le nom dans le cv*/
+/* page cv*/
 #nom_cv{
     font-size:1.2em;
 }
 
+/*marge de 10% ou de 20% sur certains éléments du cv*/
+/* page cv*/
 #adresse_tel_cv{
     margin-top:10%;
 }
@@ -102,6 +129,9 @@ body section{
     margin-top:20%;
 }
 
+/*agrandissement de la taille de police sur le mot langues dans le cv*/
+/* marge de 15% à gauche sur la liste des langues*/
+/*page cv*/
 #titre_langue_cv{
     font-size:1.2em;
     display:block;
@@ -111,6 +141,9 @@ body section{
     margin-left:15%;
 }
 
+/*marge de 15% au dessus sur les centres d'intérêts et agrandissement de la police*/
+/* marge de 15% à gauche sur la liste des langues*/
+/*page cv*/
 #titre_interet_cv{
     margin-top:15%;
     font-size:1.2em;
@@ -169,6 +202,9 @@ body section{
 }
 
 
+/* menu vertical flottant à gauche avec une marge de 9% au dessus*/
+/*menu flottant en hauteur avec le position:fixed*/
+/*toutes les pages*/
 #menu_vertical{
     float:left;
     position:fixed;
@@ -177,6 +213,8 @@ body section{
     padding-left:0;
 }
 
+/* aucune puce sur les liens du menu*/
+/*toutes les pages*/
 #menu_vertical ul{
     list-style-type:none;
     margin-left:0;
@@ -187,6 +225,9 @@ body section{
     margin-bottom:1px;
 }
 
+/* lien du menu de type block pour passeg à la ligne pour chaque lien*/
+/* largeur de 110% et hauteur de ligne de 300%*/
+/*toues les pages*/
 #menu_vertical a{
     display:block;
     width:110%;
@@ -200,6 +241,7 @@ body section{
 
 /* L'animation ne fonctionne pas complètement sur Chrome, le changement de couleur se fait uniquement sur les liens non visités
     Impossible de réinitialiser cette propriété en javascript */
+
 #menu_vertical a:hover{
    -moz-animation: anim_menu 1s forwards;
    -webkit-animation:anim_menu 1s forwards;
@@ -207,12 +249,17 @@ body section{
    animation: anim_menu 1s forwards;
 }
 
+/* menu principal centré*/
+/*page accueil*/
 #menu_principal{
     margin-left:24%;
     margin-right:24%;
     padding-left:2.5%;
 }
 
+/*lien du menu accueil de 33% de largeur avec bordures arrondies*/
+/* texte des liens centrés et bordure de 1px*/
+/*page accueil*/
 #menu_principal a{
     display:inline-block;
     border:1px solid black;
@@ -225,71 +272,86 @@ body section{
     width:33%;
 }
 
+/*changement des couleurs des bordures droites et basses ainsi que du texte du bloc du lien lors du survol de celui-ci*/
+/*page accueil*/
 #menu_principal a:hover{
-    border-right-color:blue;
-    border-bottom-color: blue;
-    color:blue;
+    border-right-color:#600fbb;
+    border-bottom-color:#600fbb;
+    color:#600fbb;
     border-radius:5%;
     border-width:2px;
 }
 
-#corps_accueil h2{
-    text-align: center;
-}
-
+/* marge de 2% à droite sur le nom du langage à ajouter ainsi que sur la lsite déroulante du type*/
+/* page langages*/
 .ajout_langage{
     margin-right:2%;
 }
 
+/* modification du pointeur lors du survol du bouton d'ajout de langage*/
+/*page langages*/
 #bouton_ajout:hover{
     cursor:pointer;
 }
 
+/*marge de 4% au dessus entre les blocs des différents types de langages*/
+/*page langages*/
 .section_langage{
     margin-top:4%;
 }
 
+/* modification du pointeur lors du survol des boutons de suppression de langages*/
+/*page langages*/
 .suppr_langage:hover{
     cursor:pointer;
 }
 
+/*classe permettant de souligner certains textes*/
+/*toutes les pages*/
 .souligne{
     text-decoration:underline;
 }
 
+/*classe appliquée au balises meter avec un largeur de 30% et une marge à droite de 10%*/
+/*page langages*/
 .jauge{
     width:30%;
     margin-right:10%;
 }
 
+/*titres des langages en majuscules*/
+/*page langages*/
 .titre_langage{
     text-transform:uppercase;
     display:block;
 }
 
+/* classe appliquée aux champs number de modification des valeurs de langages*/
+/* marge à droite de 10% et largeur de 15%*/
+/*page langages*/
 .modif{
     margin-right:10%;
     width:15%;
 }
 
-.corps{
-    clear:left;
-    margin-left:15%;
-    margin-right:15%;
-    padding-top:1%;
-}
-
+/*marge à gauche de 13% et marge de 4% en bas pour le bloc de sélection de l'application*/
+/*page réalisations*/
 #choix_appli{
     margin-left:13%;
     margin-bottom:4%;
 }
 
+/*padding appliqué aux liens permettant de choisir l'appli*/
+/*marge à droite de 10% et bordure de 1px*/
+/*page réalisations*/
 .lien_appli{
     padding:1% 5% 1% 5%;
     margin-right:10%;
     border:1px solid black;
 }
 
+/*media queries permetant de gérer les écrans plus petits au niveau du bloc de sélection de l'appli*/
+/*page réalisations*/
 @media screen and (max-width : 1650px) {
     #choix_appli {
         margin-left: 5%;
@@ -314,19 +376,27 @@ body section{
     }
 }
 
+/*modification de la couleur de fond du lien et du type de pointeur lors du survol des liens*/
+/*page réalisations*/
 .lien_appli:hover{
     cursor:pointer;
     background-image: linear-gradient(to bottom right, #671abe, #ebe7e7);
 }
 
+/*titre defs l'appli centré*/
+/*page réalisations*/
 #titre_appli{
     text-align:center;
 }
 
+/*masquage des différents éléments d'informations sur les applis au chargement de la page*/
+/*page réalisations*/
 #descriptif_appli_film, #descriptif_appli_gpi, #descriptif_appli_prev,#img_film,#img_gpi,#img_prev{
     display:none;
 }
 
+/*largeur de 92% sur les captures d'écrans des différentes applications et ombre en haut à gauche de chaque image*/
+/*page réalisations*/
 .img_appli{
     width:92%;
     -moz-box-shadow: -10px -10px 5px -2px #A9A9A9;
@@ -335,42 +405,60 @@ body section{
     box-shadow: -10px -10px 5px -2px #A9A9A9;
 }
 
+/* modification du pointeur lors du survol des captures d'écran*/
+/*page réalisations*/
 .img_appli:hover{
     cursor:pointer;
 }
 
+/*passage à la ligne après l'indication "descriptionde l'application"*/
+/*page réalisations*/
 .message_appli{
     display:block;
     margin:1% 0 1% 0;
 }
 
+/*description des captures d'écran centrée*/
+/*page réalisations*/
 .images_appli p{
     text-align:center;
     margin:0 5% 5% 5%;
 }
 
+/*bloc d'affichage de l'application masqué au chargement de la page*/
+/*page réalisations*/
 #affich_appli{
     display:none;
 }
 
+/* passage à la ligne après les label de la page*/
+/*page contact*/
 .label_contact{
     display: block;
     margin-top: 5%;
 }
 
+/*marge de 33% à gauche contenant le formulaire*/
+/*page contact*/
 #form_contact{
     padding-left: 33%;
 }
 
+/* passage à la ligne après le textarea et marge de 5% en bas*/
+/*page contact*/
 textarea{
     display: block;
     margin-bottom:5%;
 }
 
+/* largeur de 49% pour le champ texte dédié au sujet du message*/
+/*page contact*/
 #sujet_message{
     width: 49%;
 }
 
+/* bloc contenant les champs de modifications flottant à gauche et de largeur 35%*/
+/*page propriétés_css*/
 #proprietes{
     float:left;
     width:35%;
@@ -378,12 +466,16 @@ textarea{
     margin-bottom:5%;
 }
 
+/*section contenant la forme à modifié de largeur 50% avec marge à gauche de 50% et marge de 25% en haut*/
+/*page propriétés_css*/
 #modification{
     width:50%;
     margin-left:50%;
     margin-top:25%;
 }
 
+/*bloc de la forme à modifié de largeur de 80% et hauteur de 200px avec marges de 10%*/
+/*page propriétés_css*/
 #modif{
     width:80%;
     padding:0;
@@ -392,13 +484,16 @@ textarea{
     background-color:mediumpurple;
 }
 
-
+/*passage à la ligne après explication de la propriété*/
+/*page propriétés_css*/
 .explication_prop{
     display:block;
     margin-bottom:2%;
     margin-top:8%;
 }
 
+/*passage à la ligne après les label*/
+/*page propriétés_css*/
 .prop{
     display:block;
 }
